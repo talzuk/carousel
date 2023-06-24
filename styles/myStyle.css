@@ -1,0 +1,692 @@
+﻿body {
+  direction: rtl;
+  background-color: #fff;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  font-family: 'Varela Round';
+}
+
+.beans {
+  background: rgba(255, 228, 196, 0.295)
+}
+
+main {
+  padding: 50px 0px 0px;
+  width: 100%;
+}
+/* קישורי עמודים באתר שאינם זמינים */
+.notActive {
+  cursor: not-allowed;
+}
+
+/* הגדרות עיצוב ללוגו */
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1 {
+  color: black;
+  font-family:'Rubik' ;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: lighter;
+}
+
+h2 {
+  font-family: 'Rubik';
+  font-size: x-large;
+  text-align: right;
+  font-weight: lighter;
+}
+
+/הגדרות עיצוב לתת כותרות בראש הדפים/ .subtitle {
+  font-family: 'Rubik';
+  font-size: x-large;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: 'Varela Round';
+  font-size: x-large;
+  text-align: right;
+}
+
+h4 {
+  font-family: 'Rubik';
+  font-size: large;
+  font-weight: normal;
+}
+
+p{
+  font-family: 'Varela round';
+  font-size: 20px;
+  
+}
+article {
+  font-family: 'Varela Round';
+  text-align: right;
+}
+
+div {
+  font-family: 'Varela Round';
+}
+
+#homePageInfo {
+  width: 100%;
+}
+
+header {
+  box-sizing: border-box;
+  height: fit-content;
+  font-family: 'Varela Round';
+  position: fixed;
+  width: 100%;
+
+  z-index: 1000;
+}
+
+header div {
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navi {
+  width: fit-content;
+}
+
+/* הגדרת התפריט כניווט בשורה אך עם אפשרות לעיצוב בנפרד */
+.nav > li {
+  display: inline-block;
+  position: sticky;
+}
+
+.nav > li > a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Varela Round';
+}
+
+/* עיצוב התפריט המוסתר */
+.nav ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  font-family: 'Varela Round';
+}
+
+/* הגדרת מעבר עכבר לתפריט ניווט */
+
+.nav li:hover > ul {
+  display: block;
+  font-family: 'Varela Round';
+}
+
+/* שליטה על השורות בתפריט המוסתר שיוצגו כשורה בפני עצמה */
+.nav ul li {
+  display: block;
+  font-family: 'Varela Round';
+  color: black;
+  text-decoration: none;
+}
+
+/* עיצוב הקישורים בעת המעבר על תפריט הניווט */
+.nav ul li a {
+  display: block;
+  padding: 5px 0;
+  color: saddlebrown;
+  font-family: 'Varela Round';
+}
+
+nav ol li{
+  display: inline-block;
+  background-color: #fff;
+
+}
+/* צבע הרקע של הפוטר*/
+footer {
+  box-sizing: border-box;
+  bottom: 0;
+  background-color: white;
+  color: black;
+  padding: 40px;
+  width: 100%;
+  font-family: 'Varela Round';
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 10px;
+}
+.footer-links li a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Varela Round';
+}
+
+footer div p {
+  font-family: 'Varela Round';
+}
+
+#welcomeImg {
+  background-image: url('../pic/home.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcomeImg h1 {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Rubik';
+  width: 100%; 
+}
+
+#contactIMG {
+  background-image: url('../pic/coffeeProcIMG.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#titleContect{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Rubik';
+    width: 100%; 
+  }
+
+
+#siteMapImg {
+  background-image: url('../pic/siteMap.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#siteMapImg h1 {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Rubik';
+  width: 100%; 
+}
+
+#aboutIMG {
+  background-image: url('../pic/aboutIMG.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutIMG h1 {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Rubik';
+  width: 100%; 
+}
+
+#contactIMG {
+  background-image: url('../pic/contactIMG.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#pIntroduction{
+font-size:25px;
+}
+
+)
+span {
+  height: 200px;
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+}
+.picText {
+  height: auto;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Varela Round';
+}
+
+.section {
+  width: 30%;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+}
+
+.caption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.headline {
+  font-weight: bold;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.read-more:hover {
+  background-color: palegoldenrod;
+  box-shadow: 0px 15px 20px palegoldenrod;
+  color: black;
+  transform: translateY(-7px);
+}
+
+div div div h3 {
+  text-align: center;
+}
+
+article div #welcomeP {
+  font-family: 'Varela Round';
+  line-height: 1.5;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.textReadMore {
+  font-family: 'Varela Round';
+}
+
+.section {
+  line-height: 1.5;
+  font-size: large;
+}
+
+#pageIntroduction {
+  text-align: center;
+  font-family: 'Varela Round';
+}
+
+
+#coffeContainer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Varela round';
+  
+}
+
+.beansH3 {
+  text-align: right;
+  font-size: 24px;
+}
+
+#beansText {
+  width: 50%;
+  font-size: 20px;
+}
+
+.beansText {
+  width: 50vw;
+
+}
+
+.beansMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  
+}
+
+.content,
+.process {
+  padding: 0px 50px 80px;
+  box-sizing: border-box;
+}
+
+.content {
+  text-align: center;
+}
+.contentHeader {
+  padding: 120px 0px 0px;
+}
+
+.process article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.coffeImg {
+  z-index: 0;
+  border-radius: 50px;
+  filter: drop-shadow(0px 10px 4px rgb(165, 165, 165));
+  width: 300px;
+}
+
+#beansImg img {
+  width: 300px;
+  height: auto;
+}
+
+#coffeePlant,
+#coffeEProcessing,
+#coffeeRostion,
+#favBavrege {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.processConatiner {
+  background: rgba(255, 228, 196, 0.295);
+}
+
+.imgContanier {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.imgContanier span {
+  font-size: 16px;
+}
+
+.aboutDetails ul li a{
+  font-size: 30px;
+    font-family:'Varela Round';
+}
+
+.aboutDetails ul li{
+  font-size: 30px;
+    font-family:'Varela Round';
+    list-style-type: none;
+
+}
+ .designmap{
+  font-size:14px;
+  text-decoration: none;
+  color: black;
+  background-image: url(../pic/background.jpg);
+  max-width: 20%;
+  max-height: 60%;
+  border-radius: 5%;
+  filter: drop-shadow(0px 10px 4px rgb(220, 212, 212));
+  margin-right: 40%;
+  
+}
+
+.PreForm{
+  padding: 0px 50px;
+}
+
+#send{
+  font-size: 20px;
+  padding: 5px;
+}
+
+#message{
+  padding: 25px 0px;
+}
+
+#contactUs{
+  font-size:14px;
+  color: black;
+  background-image: url(../pic/background.jpg);
+  max-width: 20%;
+  max-height: 60%;
+  border-radius: 5%;
+  filter: drop-shadow(0px 10px 4px rgb(220, 212, 212));
+  text-align: center;
+  margin-right: 40%;
+  
+}
+
+#hitLogo{
+  max-width: 20%;
+  max-height: 20%;
+}
+.contact{
+  text-align: center;
+
+}
+
+.mainDesign{
+  background-color:rgb(243, 243, 238) ;
+}
+
+.carousel-section{
+
+  width: 100%;
+  height: 1000px;
+  
+
+  background: #372f43;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel{
+  width: 80%;
+  height: fit-content;
+
+
+}
+
+.main-img-container{
+  position: relative;
+  
+  height: 450px;
+
+  object-fit: contain;
+  
+  overflow: hidden;
+
+  user-select: none;
+
+  border-radius: 10px;
+}
+
+.main-img{
+  min-width: 100%;
+  height: auto;
+  max-height: 450px;
+}
+
+.main-img-container:hover .arrow{
+  opacity : 1;
+  background-color: rgba(158, 157, 157, 0.374);
+  color: white;
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+
+
+
+.arrow{
+  cursor: pointer;
+  position: absolute;
+color:transparent;
+height: 80px;
+width: 30px;
+font-size: 40px;
+font-weight: 700;
+
+top: 0;
+
+transform: translateY(175px);
+
+opacity: 0;
+
+text-align: center;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;  
+}
+
+.main-img-container:hover .arrow:active{
+  opacity: 1;
+  background-color: rgba(158, 157, 157, 0.607);
+  color: white;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+.left{
+  left:0;
+ 
+
+}
+
+.right{
+  right:0;
+
+}
+
+.img-selection{
+  width: 100%;
+  height: 250px;
+  background: #372f43;
+  text-align: center;
+
+}
+
+.img-selection-title{
+  font-family: 'Varela Round';
+  font-size: 26px;
+  line-height: 60px;
+  color: white;
+}
+
+
+.crousel-images{
+  width: 100%;
+  height: 200px;
+
+  background-color: rgba(255, 255, 255, 0.251);
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
+.crousel-img{
+  cursor: pointer;
+  width: 18%;
+  height: auto;
+
+  border-radius: 10px;
+
+  opacity: 0.5;
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+.crousel-img:hover{
+  opacity: 0.8;
+}
+
+
+.crousel-img:active{
+  opacity: 1;
+}
+
+.carousel-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
